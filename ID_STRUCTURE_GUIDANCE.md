@@ -107,6 +107,10 @@ avgas - aviation gasoline - petrol-based aviation fuel
 
 avtur - aviation turbine (or jet) fuel - kerosine-based aviation fuel
 
+ccs — carbon capture and storage
+
+csp — concentrated solar power
+
 lldpe - linear low-density polyethylene 
 
 ldpe - low-density polyethylene
@@ -114,6 +118,8 @@ ldpe - low-density polyethylene
 lt - less than
 
 lte - less than or equal to
+
+ngcc — natural gas combined cycle
 
 fcev - fuel cell electric vehicle - refers to hydrogen fuel cell vehicles
 
@@ -127,11 +133,15 @@ hev - hybrid electric vehicle (non plug-in, with electric-only mode)
 
 hvo - hydrogenated vegetable oil
 
+igcc — integrated gassification combined cycle
+
 me - methyl ester
 
 mhev - mild hybrid electric vehicle (non plug-in, no electric-only mode)
 
 na - Not available or not applicable - this is used where a given dimension of an ID either doesn't apply to that particular factor (not applicable or provided as an average and therefore not required as an identifier) or is not specified by the source (not available). We use a single value of NA in all cases to avoid large amounts of interpretation being required; the context for each NA is available in the description field of each EF. 
+
+pc — pulverized coal
 
 pet - polyethylene terephthalate
 
@@ -141,6 +151,10 @@ ps - polystrene
 
 pp - polypropylene
 
+pv - photovoltaic power 
+
 pvc - polyvinyl chloride
+
+sc - supercritical
 
 weee - waste from electrical and electronic equipment
