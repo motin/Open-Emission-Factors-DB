@@ -4,29 +4,6 @@
 
 Please find guidance for population of the `ID` field below, per category. It is advisable that you review existing IDs in the category you intend to contribute to before compiling these alongside other identifying and informative fields as outlined in the [data guidance](/DATA_GUIDANCE.md), to ensure comparability with existing emission factors in the database.
 
-**Electricity**
-
-This category is for estimating the CO2 equivalent emissions of electricity use or production.
-
-`electricity-energy_source_[e.g. "grid_mix" or "coal_fired_plant"]`
-
-**Fuel**
-
-This category is for estimating the CO2 equivalent emissions of fuel production or fuel combustion. 
-
-`fuel_type_[e.g. "coal"]-fuel_use_[e.g. "industrial"]`
-
-**Computing (including CPU, Memory, and Networking categories)**
-
-This category is for estimating the CO2 equivalent emissions of CPU utilization, memory, and networking categories within the computing sector.
-
-`["cpu" or "memory" or "networking"]-provider_[e.g. "aws"]-region_[e.g. "af_south_1"]`
-
-**Computing (Storage category)**
-
-This category is for estimating the CO2 equivalent emissions produced by cloud data storage.
-
-`storage-provider_[e.g."aws"]-region_[e.g. "af_south_1"]-type_[e.g. "hdd"]`
 
 **Accommodation**
 
@@ -34,47 +11,6 @@ This category is for estimating the CO2 equivalent emissions of an average hotel
 
 `accomodation_type_[e.g. "hotel_stay"]`
 
-**Vehicle**
-
-This category is for estimating the CO2 equivalent emissions of different types of vehicles.
-
-`["passenger" or "commercial" or "rental"]_vehicle-vehicle_type_[e.g. "car" or "bus"]-fuel_source_[e.g. "diesel" or "cng"]-engine_size_[e.g."gt_3000cc"]-vehicle_age_[e.g. "post_2015"]-vehicle_weight_[e.g."gt_12t"]`
-
-**Road Travel**
-
-This category is for estimating the CO2 equivalent emissions of individual road travel.
-
-`passenger_vehicle-vehicle_type_[e.g. "car" or "bus"]-fuel_source_[e.g. "diesel" or "cng"]-distance_[e.g. "short"]-engine_size_[e.g. "small"]`
-
-**Air Travel**
-
-This category is for estimating the CO2 equivalent emissions of individual air travel.
-
-`passenger_flight-route_type_[e.g. "international" or "domestic"]-aircraft_type_[e.g. "medium" or "jet"]-distance_[e.g. "lt_300km", "long_haul" or "short_haul_<300km" or "na"]-class_[e.g. "economy" or "na"]-contrails_["included" or "excluded" or "na"]`
-
-**Rail Travel**
-
-This category is for estimating the CO2 equivalent emissions of individual rail travel.
-
-`passenger_train-route_type_[e.g. "intercity" or "local"]-fuel_source_[e.g. "electricity" or "diesel"]`
-
-**Sea travel**
-
-This category is for estimating the CO2 equivalent emissions of individual (or car) sea travel.
-
-`passenger_ferry-route_type_[e.g. "foot_passenger" or "car_passenger"]-fuel_source_[e.g. "na"]`
-
-**Refrigerants and Fugitive Gases**
-
-This category is for estimating the CO2 equivalent emissions of refrigerant and fugitive gases. Tbese conversion factor should be used to report leakage from air-conditioning refrigeration units or the release to the atmosphere of other gases that have global warming potential (GWP).
-
-`fugitive_gas-type_[e.g. "carbon_dioxide" or "dimethylether"]`
-
-**Road Transport**
-
-This category is for estimating the CO2 equivalent emissions of shipping goods by road.
-
-`freight_vehicle-vehicle_type_[e.g. "commercial" or "hgv_rigid"]-fuel_source_[e.g. "diesel" or "bev"]-vehicle_weight_[e.g. "3.5t_7.5t"]*-percentage_load_[e.g. "50_laden"]`
 
 **Air Transport (to become Air Freight)**
 
@@ -82,17 +18,97 @@ This category is for estimating the CO2 equivalent emissions of shipping goods b
 
 `freight_flight-route_type_[e.g. "international" or "domestic"]-distance_[e.g. "lt_500km", "long_haul" or "na"]-weight_[e.g. "gt_100t" or "na"]-contrails_["included" or "excluded" or "na"]`
 
+
+**Air Travel**
+
+This category is for estimating the CO2 equivalent emissions of individual air travel.
+
+`passenger_flight-route_type_[e.g. "international" or "domestic"]-aircraft_type_[e.g. "medium" or "jet"]-distance_[e.g. "lt_300km", "long_haul" or "short_haul_<300km" or "na"]-class_[e.g. "economy" or "na"]-contrails_["included" or "excluded" or "na"]`
+
+
+**Computing (including CPU, Memory, and Networking categories)**
+
+This category is for estimating the CO2 equivalent emissions of CPU utilization, memory, and networking categories within the computing sector.
+
+`["cpu" or "memory" or "networking"]-provider_[e.g. "aws"]-region_[e.g. "af_south_1"]`
+
+
+**Computing (Storage category)**
+
+This category is for estimating the CO2 equivalent emissions produced by cloud data storage.
+
+`storage-provider_[e.g."aws"]-region_[e.g. "af_south_1"]-type_[e.g. "hdd"]`
+
+
+**Electricity**
+
+This category is for estimating the CO2 equivalent emissions of electricity use or production.
+
+`electricity-energy_source_[e.g. "grid_mix" or "coal_fired_plant"]`
+
+
+**Fuel**
+
+This category is for estimating the CO2 equivalent emissions of fuel production or fuel combustion. 
+
+`fuel_type_[e.g. "coal"]-fuel_use_[e.g. "industrial"]`
+
+
 **Rail Transport**
 
 This category is for estimating the CO2 equivalent emissions of shipping goods by rail.
 
 `freight_train-route_type_[e.g. "domestic" or "na"]-fuel_type_[e.g. diesel]`
 
+
+**Rail Travel**
+
+This category is for estimating the CO2 equivalent emissions of individual rail travel.
+
+`passenger_train-route_type_[e.g. "intercity" or "local"]-fuel_source_[e.g. "electricity" or "diesel"]`
+
+
+**Refrigerants and Fugitive Gases**
+
+This category is for estimating the CO2 equivalent emissions of refrigerant and fugitive gases. Tbese conversion factor should be used to report leakage from air-conditioning refrigeration units or the release to the atmosphere of other gases that have global warming potential (GWP).
+
+`fugitive_gas-type_[e.g. "carbon_dioxide" or "dimethylether"]`
+
+
+**Road Transport**
+
+This category is for estimating the CO2 equivalent emissions of shipping goods by road.
+
+`freight_vehicle-vehicle_type_[e.g. "commercial" or "hgv_rigid"]-fuel_source_[e.g. "diesel" or "bev"]-vehicle_weight_[e.g. "lt_3.5t_gt_7.5t"]*-percentage_load_[e.g. "50_laden"]`
+
+
+**Road Travel**
+
+This category is for estimating the CO2 equivalent emissions of individual road travel.
+
+`passenger_vehicle-vehicle_type_[e.g. "car" or "bus"]-fuel_source_[e.g. "diesel" or "cng"]-distance_[e.g. "short"]-engine_size_[e.g. "small"]`
+
+
 **Sea Transport**
 
 This category is for estimating the CO2 equivalent emissions of shipping goods by sea.
 
 `sea_transport-vessel_type [e.g. "bulk_carrier"]- route_type_[e.g. "intra_mediterranean"]-vessel_length_[e.g. "gt-8000-teu"]-tonnage_[e.g. "gt_200000dwt"]-fuel_source_[e.g. "na" or "diesel"]`
+
+
+**Sea Travel**
+
+This category is for estimating the CO2 equivalent emissions of individual (or car) sea travel.
+
+`passenger_ferry-route_type_[e.g. "foot_passenger" or "car_passenger"]-fuel_source_[e.g. "na"]`
+
+
+**Vehicle**
+
+This category is for estimating the CO2 equivalent emissions of different types of vehicles.
+
+`["passenger" or "commercial" or "rental"]_vehicle-vehicle_type_[e.g. "car" or "bus"]-fuel_source_[e.g. "diesel" or "cng"]-engine_size_[e.g."gt_3000cc"]-vehicle_age_[e.g. "post_2015"]-vehicle_weight_[e.g."gt_12t"]`
+
 
 **Waste Disposal**
 
